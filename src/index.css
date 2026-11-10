@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-smash-black: #0E0E0E;
+  --color-smash-mustard: #F2B705;
+  --color-smash-red: #D7261E;
+  --color-smash-cream: #FFF6E5;
+  --color-smash-dark: #141414;
+  --color-smash-card: #181818;
+  --color-smash-border: rgba(255, 246, 229, 0.12);
+
+  --font-display: "Bebas Neue", "Barlow Condensed", sans-serif;
+  --font-condensed: "Barlow Condensed", sans-serif;
+  --font-body: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom noise/grit overlay */
+.bg-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0E0E0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #F2B705;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D7261E;
+}
+
+/* Marquee animations */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 24s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Stencil and sticker accents */
+.badge-stamp {
+  transform: rotate(-3deg);
+  display: inline-block;
+}

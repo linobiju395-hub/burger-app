@@ -1,0 +1,6 @@
+{
+  "name": "SMASH & SONS | Dubai Smash Burgers",
+  "description": "Scrollytelling experience for SMASH & SONS, Dubai's premier smash-burger joint. 100% Wagyu, crispy lacy edges, Martin's potato buns, and unapologetic flavor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
